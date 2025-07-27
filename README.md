@@ -7,8 +7,8 @@
 **Repository Pattern:** `candidate-00X-powerofaum-module-metrics`
 
 ## 🌐 Live Demo
-- **Live Staging URL:** [To be deployed on Vercel]
-- **GitHub Repository:** [Your GitHub repo URL]
+- **Live Staging URL:** https://candidate-00-x-powerofaum-module-me-pi.vercel.app/
+- **GitHub Repository:** https://github.com/Princegupta101/candidate-00X-powerofaum-module-metrics
 
 ## 📋 Project Overview
 PowerOfAum is a private SaaS engine for spiritual platforms. This module provides admin metrics dashboard functionality with two main API endpoints and an optional HTML visualization interface.
@@ -84,7 +84,7 @@ PowerOfAum is a private SaaS engine for spiritual platforms. This module provide
 ### Local Development
 1. **Clone the repository**
 ```bash
-git clone [your-repo-url]
+git clone git@github.com:Princegupta101/candidate-00X-powerofaum-module-metrics.git
 cd candidate-00X-powerofaum-module-metrics
 ```
 
@@ -127,17 +127,6 @@ npm start
 
 ## 📊 API Documentation
 
-### Response Formats
-All API responses use standard JSON format with appropriate HTTP status codes.
-
-#### Success Response
-- **Status Code:** 200 OK
-- **Content-Type:** application/json
-
-#### Error Handling
-- Basic error handling implemented
-- CORS enabled for cross-origin requests
-- Graceful fallbacks in the dashboard
 
 ### Data Formats
 - **Revenue values:** Stored and returned in cents (integer)
@@ -152,46 +141,6 @@ All API responses use standard JSON format with appropriate HTTP status codes.
 - **Body Parser:** JSON middleware enabled
 - **Static Content:** HTML dashboard served from root endpoint
 
-### Mock Data Implementation
-- All data is currently mocked as per assessment requirements
-- Easy to replace with database connections in production
-- Consistent data structure across endpoints
-
-### Performance Considerations
-- Lightweight Express server
-- Minimal dependencies
-- Optimized for serverless deployment
-- Fast response times
-
-## 📈 Metrics Explanation
-
-### Platform Commission Metrics
-- **Total Gross Revenue:** $150,000.00 (15,000,000 cents)
-- **Total Commission:** $30,000.00 (3,000,000 cents)
-- **Commission Rate:** 20% of gross revenue
-
-### Overall Platform Metrics
-- **Total Users:** 1,200 registered users
-- **Total Subscriptions:** 800 active subscriptions
-- **Total Add-On Sales:** 150 additional purchases
-- **Total Pro Trials:** 200 trial users
-
-## 🎨 Dashboard Features
-
-### Visual Design
-- Modern, professional interface
-- Responsive grid layout
-- Color-coded metrics cards
-- Smooth hover animations
-- Clean typography
-
-### Functionality
-- Real-time data loading
-- Proper currency and number formatting
-- Refresh functionality
-- Error handling with user feedback
-- API endpoint documentation
-
 ## 📝 Assessment Requirements Checklist
 
 - ✅ **Module H Implementation:** Admin Metrics Dashboard Stub
@@ -204,28 +153,3 @@ All API responses use standard JSON format with appropriate HTTP status codes.
 - ✅ **Deployment Ready:** Vercel configuration included
 - ✅ **HTTPS Support:** Enabled through Vercel
 - ✅ **Strictly to Spec:** No additional features beyond requirements
-
-## 🚀 Next Steps for Production
-
-### Database Integration
-- Replace mock data with database queries
-- Add data validation and sanitization
-- Implement caching for performance
-
-### Security Enhancements
-- Implement authentication middleware
-- Add rate limiting
-- Restrict CORS origins
-- Add request validation
-
-### Monitoring & Analytics
-- Add logging middleware
-- Implement health checks
-- Add performance monitoring
-- Error tracking and reporting
-
-## 👥 Contact Information
-This implementation was created for the Alatree Ventures tech assessment. For any questions or clarifications about the code, please refer to the GitHub repository or contact through the appropriate channels.
-
----
-**Built with ❤️ for PowerOfAum SaaS Engine**

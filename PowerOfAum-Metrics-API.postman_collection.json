@@ -170,7 +170,7 @@
 		},
 		{
 			"key": "production_url",
-			"value": "https://your-app-name.vercel.app",
+			"value": "https://candidate-00-x-powerofaum-module-me-pi.vercel.app/",
 			"type": "string",
 			"description": "Production URL for the deployed API on Vercel"
 		}

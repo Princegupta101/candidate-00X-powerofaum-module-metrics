@@ -1,0 +1,178 @@
+{
+	"info": {
+		"_postman_id": "powerofaum-metrics-api",
+		"name": "PowerOfAum - Admin Metrics Dashboard API",
+		"description": "API collection for PowerOfAum Module H: Admin Metrics Dashboard\n\nThis collection includes endpoints for:\n- Platform commission metrics\n- Overall platform metrics\n\nBuilt for Alatree Ventures Tech Assessment - July 2025",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "Welcome Page",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "{{base_url}}/",
+					"host": [
+						"{{base_url}}"
+					],
+					"path": [
+						""
+					]
+				},
+				"description": "Returns the HTML dashboard page with metrics visualization"
+			},
+			"response": []
+		},
+		{
+			"name": "Platform Commission Metrics",
+			"request": {
+				"method": "GET",
+				"header": [
+					{
+						"key": "Accept",
+						"value": "application/json"
+					}
+				],
+				"url": {
+					"raw": "{{base_url}}/api/platform-commission-metrics",
+					"host": [
+						"{{base_url}}"
+					],
+					"path": [
+						"api",
+						"platform-commission-metrics"
+					]
+				},
+				"description": "Returns platform commission metrics including total gross revenue and total commission in cents"
+			},
+			"response": [
+				{
+					"name": "Success Response",
+					"originalRequest": {
+						"method": "GET",
+						"header": [
+							{
+								"key": "Accept",
+								"value": "application/json"
+							}
+						],
+						"url": {
+							"raw": "{{base_url}}/api/platform-commission-metrics",
+							"host": [
+								"{{base_url}}"
+							],
+							"path": [
+								"api",
+								"platform-commission-metrics"
+							]
+						}
+					},
+					"status": "OK",
+					"code": 200,
+					"_postman_previewlanguage": "json",
+					"header": [
+						{
+							"key": "Content-Type",
+							"value": "application/json"
+						}
+					],
+					"cookie": [],
+					"body": "{\n  \"totalGrossRevenueCents\": 15000000,\n  \"totalCommissionCents\": 3000000\n}"
+				}
+			]
+		},
+		{
+			"name": "Overall Metrics",
+			"request": {
+				"method": "GET",
+				"header": [
+					{
+						"key": "Accept",
+						"value": "application/json"
+					}
+				],
+				"url": {
+					"raw": "{{base_url}}/api/overall-metrics",
+					"host": [
+						"{{base_url}}"
+					],
+					"path": [
+						"api",
+						"overall-metrics"
+					]
+				},
+				"description": "Returns overall platform metrics including users, subscriptions, add-on sales, and pro trials"
+			},
+			"response": [
+				{
+					"name": "Success Response",
+					"originalRequest": {
+						"method": "GET",
+						"header": [
+							{
+								"key": "Accept",
+								"value": "application/json"
+							}
+						],
+						"url": {
+							"raw": "{{base_url}}/api/overall-metrics",
+							"host": [
+								"{{base_url}}"
+							],
+							"path": [
+								"api",
+								"overall-metrics"
+							]
+						}
+					},
+					"status": "OK",
+					"code": 200,
+					"_postman_previewlanguage": "json",
+					"header": [
+						{
+							"key": "Content-Type",
+							"value": "application/json"
+						}
+					],
+					"cookie": [],
+					"body": "{\n  \"totalUsers\": 1200,\n  \"totalSubscriptions\": 800,\n  \"totalAddOnSales\": 150,\n  \"totalProTrials\": 200\n}"
+				}
+			]
+		}
+	],
+	"event": [
+		{
+			"listen": "prerequest",
+			"script": {
+				"type": "text/javascript",
+				"exec": [
+					""
+				]
+			}
+		},
+		{
+			"listen": "test",
+			"script": {
+				"type": "text/javascript",
+				"exec": [
+					""
+				]
+			}
+		}
+	],
+	"variable": [
+		{
+			"key": "base_url",
+			"value": "http://localhost:3000",
+			"type": "string",
+			"description": "Base URL for the API. Change to your deployed URL for production testing."
+		},
+		{
+			"key": "production_url",
+			"value": "https://your-app-name.vercel.app",
+			"type": "string",
+			"description": "Production URL for the deployed API on Vercel"
+		}
+	]
+}
